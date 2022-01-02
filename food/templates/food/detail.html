@@ -1,0 +1,23 @@
+{% extends "food/base.html" %}
+{% load static %}
+{% block body %}
+<link rel="stylesheet" href="{% static 'food/css/detail.css' %}">
+
+<div class="container">
+    <div class="item-img">
+            <img height='300' src="{{item.item_img}}" alt="comingsoon">
+    </div>
+    <div class="item-name">
+        <h1>Name: {{item.item_name}}</h2>
+        <h1>Description: {{item.item_description}}</h2>
+        <h1>price: {{item.item_price}}</h2>   
+    </div>
+    <a href="{% url 'food:edit_item' item.id %}">Edit</a>
+    <a href="{% url 'food:delete_item' item.id %}" style="display: inline-block; margin-left: 60px;">Delete</a>
+
+   
+    
+</div>
+
+
+{% endblock %}

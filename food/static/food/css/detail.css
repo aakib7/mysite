@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container{
+    max-width: 1200px;
+    width: 70%;
+    margin: 0 auto;
+}
+img{
+    margin-top: 2rem;
+}
+
+.item-name{
+    margin-top: 2rem;
+}
+h1{
+    font-size: 2rem;
+    padding: 5px 0;
+}

@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container{
+    max-width: 1200px;
+    width: 70%;
+    margin: 0 auto;
+    background-color: #f4f4f4;
+}
+.container::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.item-img,.item-detail,.item-name{
+    width: 33.3%;
+    height: 200px;
+}
+
+.item-img{
+    float:left;
+}
+.item-name{
+    float:left;
+}
+.item-detail{
+    float:left;
+}
+.item-img img{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding-top: 5px;
+}
+
+.item-name h2{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-top: 5rem;
+}
+.item-name h3{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-top: 20px;
+}
+.item-name h3>span{
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: 400;
+    margin-top: 50px;
+}
+
+
+a{
+    text-decoration: none;
+    font-size: 20px;
+}
+.btn{
+    display: inline-block;
+    padding: 2rem 4rem;
+    /* font-weight: 500; */
+    text-transform: uppercase;
+    margin: 6.5rem 2rem;
+}
+
+.detail-btn{
+    display: block;
+    background-color:#228B22;
+    color: white;
+    border-radius: .5rem;
+    width: 30%;
+    padding: 10px 20px;
+    margin-top: 30px;
+    margin-left: 95px;
+}
+.buy-btn{
+    display: block;
+    background-color: #f00;
+    color: white;
+    width: 30%;
+    padding: 10px 31px;
+    margin-top: 30px;
+    margin-left: 95px;
+}
+
+
+
+
+
+
+/* ////// Utility Classes////// */
+.lg-heading{
+    font-size: 3rem;
+}
+.md-heading{
+    font-size: 2.2rem;
+}
+
+.text-red{
+    color: #e63946;
+}
+.text-light{
+    color:#f4f4f4;
+}
+.text-black{
+    color:#333333;
+}
+.text-gray{
+    color:#555555;
+}
+
+.bg-dark{
+    background-color: #263238;
+}
